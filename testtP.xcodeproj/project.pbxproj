@@ -31,6 +31,27 @@
 			remoteGlobalIDString = 0CBFAE002164AB7C009AF0BD;
 			remoteInfo = testtP;
 		};
+		0CBFAE722164E300009AF0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CBFAE3B2164E2FC009AF0BD;
+			remoteInfo = test3;
+		};
+		0CBFAE742164E300009AF0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CBFAE4F2164E2FE009AF0BD;
+			remoteInfo = test3Tests;
+		};
+		0CBFAE762164E300009AF0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CBFAE5A2164E2FE009AF0BD;
+			remoteInfo = test3UITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +68,7 @@
 		0CBFAE202164AB7D009AF0BD /* testtPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testtPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBFAE242164AB7D009AF0BD /* testtPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testtPUITests.swift; sourceTree = "<group>"; };
 		0CBFAE262164AB7D009AF0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = test3.xcodeproj; path = test3/test3.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +119,7 @@
 		0CBFAE032164AB7C009AF0BD /* testtP */ = {
 			isa = PBXGroup;
 			children = (
+				0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */,
 				0CBFAE042164AB7C009AF0BD /* AppDelegate.swift */,
 				0CBFAE062164AB7C009AF0BD /* ViewController.swift */,
 				0CBFAE082164AB7C009AF0BD /* Main.storyboard */,
@@ -123,6 +146,16 @@
 				0CBFAE262164AB7D009AF0BD /* Info.plist */,
 			);
 			path = testtPUITests;
+			sourceTree = "<group>";
+		};
+		0CBFAE6D2164E2FE009AF0BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CBFAE732164E300009AF0BD /* test3.app */,
+				0CBFAE752164E300009AF0BD /* test3Tests.xctest */,
+				0CBFAE772164E300009AF0BD /* test3UITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +248,12 @@
 			mainGroup = 0CBFADF82164AB7C009AF0BD;
 			productRefGroup = 0CBFAE022164AB7C009AF0BD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0CBFAE6D2164E2FE009AF0BD /* Products */;
+					ProjectRef = 0CBFAE6C2164E2FE009AF0BD /* test3.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0CBFAE002164AB7C009AF0BD /* testtP */,
@@ -223,6 +262,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0CBFAE732164E300009AF0BD /* test3.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = test3.app;
+			remoteRef = 0CBFAE722164E300009AF0BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CBFAE752164E300009AF0BD /* test3Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = test3Tests.xctest;
+			remoteRef = 0CBFAE742164E300009AF0BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CBFAE772164E300009AF0BD /* test3UITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = test3UITests.xctest;
+			remoteRef = 0CBFAE762164E300009AF0BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0CBFADFF2164AB7C009AF0BD /* Resources */ = {

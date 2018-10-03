@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +12,38 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testtP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandScape" translatesAutoresizingMaskIntoConstraints="NO" id="6r1-Oo-tTT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afk-Hn-8nq">
+                                <rect key="frame" x="0.0" y="89" width="375" height="81.333333333333314"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.33527728873239437" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81N-Z0-Htk">
+                                <rect key="frame" x="0.0" y="568.33333333333337" width="375" height="243.66666666666663"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.53686179577464788" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="afk-Hn-8nq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="6ca-cH-1Qb"/>
+                            <constraint firstItem="81N-Z0-Htk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="IeJ-4m-Y5X"/>
+                            <constraint firstItem="6r1-Oo-tTT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="KAn-p8-Qh9"/>
+                            <constraint firstItem="6r1-Oo-tTT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M0f-ug-6PQ"/>
+                            <constraint firstItem="afk-Hn-8nq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O0s-Z9-NqM"/>
+                            <constraint firstItem="afk-Hn-8nq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Xnk-Kq-dWA"/>
+                            <constraint firstItem="81N-Z0-Htk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="ZVC-k3-eZh"/>
+                            <constraint firstItem="81N-Z0-Htk" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="aX2-hB-8qu"/>
+                            <constraint firstItem="6r1-Oo-tTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bXi-O2-0Ax"/>
+                            <constraint firstItem="81N-Z0-Htk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bav-vz-nnk"/>
+                            <constraint firstItem="6r1-Oo-tTT" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="gCM-yP-kya"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afk-Hn-8nq" secondAttribute="trailing" id="urT-9i-uPT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +51,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="LandScape" width="3840" height="2160"/>
+    </resources>
 </document>
