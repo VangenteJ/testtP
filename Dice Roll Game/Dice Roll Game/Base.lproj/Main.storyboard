@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +12,83 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dice_Roll_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table" translatesAutoresizingMaskIntoConstraints="NO" id="qkG-oT-hwB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SJL-Ou-D8L" userLabel="Root Stack">
+                                <rect key="frame" x="0.0" y="170" width="375" height="497"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-Bn-djK" userLabel="Top Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Please tap the buttom bellow to roll the dice!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-zj-B4n" userLabel="lblHeadtxt">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="hh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yr-ox-Lqc" userLabel="lblDiceanouncement">
+                                                <rect key="frame" x="0.0" y="79.5" width="375" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="GNQ-Dx-AQM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-XK-Dq2" userLabel="Middle Stack">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="Mdd-wT-Lym">
+                                                <rect key="frame" x="0.0" y="26" width="187.5" height="98"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="QLN-JN-ZxX">
+                                                <rect key="frame" x="187.5" y="26" width="187.5" height="98"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="ACy-KA-zcm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-HO-Ghc" userLabel="button Stack">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="247"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBV-Dr-pF2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                                <state key="normal" image="Roll"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7hB-XK-Dq2" firstAttribute="leading" secondItem="SJL-Ou-D8L" secondAttribute="leading" id="9gP-uF-3Hj"/>
+                                    <constraint firstItem="7hB-XK-Dq2" firstAttribute="top" secondItem="J4w-Bn-djK" secondAttribute="bottom" id="PeB-MI-Qg9"/>
+                                    <constraint firstItem="zKV-HO-Ghc" firstAttribute="top" secondItem="7hB-XK-Dq2" secondAttribute="bottom" id="bgq-as-HAs"/>
+                                    <constraint firstItem="J4w-Bn-djK" firstAttribute="leading" secondItem="SJL-Ou-D8L" secondAttribute="leading" id="dJc-Cg-WlW"/>
+                                    <constraint firstAttribute="trailing" secondItem="7hB-XK-Dq2" secondAttribute="trailing" id="or2-DU-Wit"/>
+                                    <constraint firstItem="J4w-Bn-djK" firstAttribute="top" secondItem="SJL-Ou-D8L" secondAttribute="top" id="pLK-tN-Yub"/>
+                                    <constraint firstAttribute="trailing" secondItem="J4w-Bn-djK" secondAttribute="trailing" id="vGD-G5-w5X"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qkG-oT-hwB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3jh-ye-Arb"/>
+                            <constraint firstAttribute="bottom" secondItem="qkG-oT-hwB" secondAttribute="bottom" id="EO7-8R-IYE"/>
+                            <constraint firstItem="qkG-oT-hwB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KMT-K1-ctI"/>
+                            <constraint firstAttribute="bottom" secondItem="SJL-Ou-D8L" secondAttribute="bottom" id="PrA-YG-oqG"/>
+                            <constraint firstItem="SJL-Ou-D8L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YNa-mb-wCG"/>
+                            <constraint firstAttribute="trailing" secondItem="qkG-oT-hwB" secondAttribute="trailing" id="bNn-a7-Adz"/>
+                            <constraint firstItem="SJL-Ou-D8L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="nvV-QF-zbq"/>
+                            <constraint firstAttribute="trailing" secondItem="SJL-Ou-D8L" secondAttribute="trailing" id="xpX-3M-7hj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +96,10 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dice1" width="99" height="98"/>
+        <image name="Dice2" width="99" height="98"/>
+        <image name="Roll" width="32" height="32"/>
+        <image name="table" width="414" height="736"/>
+    </resources>
 </document>
