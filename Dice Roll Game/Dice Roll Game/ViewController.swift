@@ -25,13 +25,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnRoll(_ sender: Any) {
-        lblDiceresum.text = String(sum)
+        
         let dice1roll = arc4random_uniform(6) + 1
         let dice2roll = arc4random_uniform(6) + 1
         
         imgDice1.image = UIImage(named: "Dice\(dice1roll)")
         imgDice2.image = UIImage(named: "Dice\(dice2roll)")
         
+        
+        lblDiceresum.text = String("The sum is: \(diceSum(Int(dice1roll), Int(dice2roll)))")
+        
+    }
+    
+    func diceSum(_ number1:Int, _ number2:Int) -> Int {
+        sum = number1 + number2
+        return sum
     }
     
     
