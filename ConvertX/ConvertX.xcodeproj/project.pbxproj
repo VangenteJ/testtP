@@ -14,6 +14,7 @@
 		0CBFAF03216642B6009AF0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFAF01216642B6009AF0BD /* LaunchScreen.storyboard */; };
 		0CBFAF0E216642B6009AF0BD /* ConvertXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFAF0D216642B6009AF0BD /* ConvertXTests.swift */; };
 		0CBFAF19216642B6009AF0BD /* ConvertXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFAF18216642B6009AF0BD /* ConvertXUITests.swift */; };
+		0CBFAF2921664941009AF0BD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFAF2821664941009AF0BD /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0CBFAF14216642B6009AF0BD /* ConvertXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBFAF18216642B6009AF0BD /* ConvertXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertXUITests.swift; sourceTree = "<group>"; };
 		0CBFAF1A216642B6009AF0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CBFAF2821664941009AF0BD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				0CBFAEF8216642B4009AF0BD /* AppDelegate.swift */,
 				0CBFAEFA216642B4009AF0BD /* ViewController.swift */,
+				0CBFAF2821664941009AF0BD /* SecondViewController.swift */,
 				0CBFAEFC216642B4009AF0BD /* Main.storyboard */,
 				0CBFAEFF216642B6009AF0BD /* Assets.xcassets */,
 				0CBFAF01216642B6009AF0BD /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBFAF2921664941009AF0BD /* SecondViewController.swift in Sources */,
 				0CBFAEFB216642B4009AF0BD /* ViewController.swift in Sources */,
 				0CBFAEF9216642B4009AF0BD /* AppDelegate.swift in Sources */,
 			);
