@@ -192,7 +192,7 @@
         <!--View Controller Second-->
         <scene sceneID="Q40-F6-8Yh">
             <objects>
-                <viewController id="v1g-vr-jVq" customClass="ViewControllerSecond" customModule="TrueConvertorX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondScreen" id="v1g-vr-jVq" customClass="ViewControllerSecond" customModule="TrueConvertorX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="owe-xB-znp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

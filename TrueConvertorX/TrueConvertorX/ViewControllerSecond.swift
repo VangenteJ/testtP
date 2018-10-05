@@ -19,8 +19,15 @@ class ViewControllerSecond: UIViewController {
     @IBOutlet weak var lblOutput: UILabel!
     
     
-    
-    
+    func checkBackground(){
+        if firstBackground == "White"{
+            viewSecond.backgroundColor = UIColor.white
+        }else if firstBackground == "cyan"{
+            viewSecond.backgroundColor = UIColor.cyan
+        }else {
+            viewSecond.backgroundColor = UIColor.blue
+        }
+    }
     
     @IBAction func btnCMtoIN(_ sender: Any) {
     }
@@ -52,7 +59,7 @@ class ViewControllerSecond: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        checkBackground()
         // Do any additional setup after loading the view.
     }
  
