@@ -74,7 +74,6 @@
                                                 <state key="normal" title="Click to start"/>
                                                 <connections>
                                                     <action selector="btnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkc-md-Ia0"/>
-                                                    <segue destination="v1g-vr-jVq" kind="show" identifier="segue" id="dct-yU-68H"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose your desired color to display the app!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHT-OP-IGZ">
@@ -92,25 +91,25 @@
                                             <constraint firstItem="PHT-OP-IGZ" firstAttribute="top" secondItem="W1m-f5-yIS" secondAttribute="bottom" id="DNf-Ve-mk8"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-oU-j09" userLabel="bottom stack">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-oU-j09" userLabel="bottom stack">
                                         <rect key="frame" x="0.0" y="385" width="375" height="387"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-Yh-OH1">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="387"/>
+                                                <rect key="frame" x="0.0" y="166.66666666666663" width="85" height="54"/>
                                                 <state key="normal" image="White"/>
                                                 <connections>
                                                     <action selector="btnChangeWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxo-c6-g84"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4Z-SV-cJl">
-                                                <rect key="frame" x="145" y="0.0" width="85" height="387"/>
+                                                <rect key="frame" x="145" y="166.66666666666663" width="85" height="54"/>
                                                 <state key="normal" image="LightBlue"/>
                                                 <connections>
                                                     <action selector="btnChangeLBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6V4-J7-iwz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcY-6L-6fK">
-                                                <rect key="frame" x="290" y="0.0" width="85" height="387"/>
+                                                <rect key="frame" x="290" y="166.66666666666663" width="85" height="54"/>
                                                 <state key="normal" image="DarkBlue"/>
                                                 <connections>
                                                     <action selector="btnChangeDBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9it-gM-i49"/>
@@ -193,7 +192,7 @@
         <scene sceneID="Q40-F6-8Yh">
             <objects>
                 <viewController storyboardIdentifier="secondScreen" id="v1g-vr-jVq" customClass="ViewControllerSecond" customModule="TrueConvertorX" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="owe-xB-znp">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="secondScreen" id="owe-xB-znp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -214,7 +213,7 @@
                                             <constraint firstAttribute="height" constant="100" id="Ccq-lw-OHJ"/>
                                         </constraints>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Texxxt" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-5H-cVO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-5H-cVO">
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Tiq-Nj-tKu"/>
@@ -255,12 +254,12 @@
                                             <constraint firstAttribute="height" constant="150" id="Sle-58-rIi"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-ea-MNA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-ea-MNA">
                                         <rect key="frame" x="0.0" y="300" width="375" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="wgb-dN-5Ab"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -307,18 +306,20 @@
                                                     <action selector="btnChangeWhite:" destination="v1g-vr-jVq" eventType="touchUpInside" id="Shj-aM-ZXc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC7-1Z-v9S">
-                                                <rect key="frame" x="101.33333333333334" y="0.0" width="71.333333333333343" height="268"/>
-                                                <state key="normal" image="DarkBlue"/>
-                                                <connections>
-                                                    <action selector="btnChangeDBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyl-Nz-I4B"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uak-1c-OHp">
-                                                <rect key="frame" x="202.66666666666666" y="0.0" width="70.999999999999972" height="268"/>
+                                                <rect key="frame" x="101.33333333333334" y="0.0" width="71.333333333333343" height="268"/>
                                                 <state key="normal" image="LightBlue"/>
                                                 <connections>
                                                     <action selector="btnChangeLBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwd-ta-GfY"/>
+                                                    <action selector="btnChangeLightBlue:" destination="v1g-vr-jVq" eventType="touchUpInside" id="vyW-jQ-5Tu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC7-1Z-v9S">
+                                                <rect key="frame" x="202.66666666666666" y="0.0" width="70.999999999999972" height="268"/>
+                                                <state key="normal" image="DarkBlue"/>
+                                                <connections>
+                                                    <action selector="btnChangeBlue:" destination="v1g-vr-jVq" eventType="touchUpInside" id="L6n-i1-hhz"/>
+                                                    <action selector="btnChangeDBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyl-Nz-I4B"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGh-cQ-UYb">
@@ -326,7 +327,7 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <state key="normal" title="Back"/>
                                                 <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="y8o-JQ-FZo"/>
+                                                    <action selector="btnBack:" destination="v1g-vr-jVq" eventType="touchUpInside" id="4TD-N7-ksk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -365,6 +366,12 @@
                         <viewLayoutGuide key="safeArea" id="2lY-pL-vlF"/>
                     </view>
                     <connections>
+                        <outlet property="btnC_to_F" destination="Pgi-sp-6hh" id="KsJ-LK-Awi"/>
+                        <outlet property="btnCm_to_In" destination="jQp-Hg-pZM" id="Dyd-6H-Tzs"/>
+                        <outlet property="btnF_to_C" destination="pD4-iP-DwQ" id="olw-4V-ekq"/>
+                        <outlet property="btnInc_to_CM" destination="6cH-yw-wzm" id="pAF-PB-IcR"/>
+                        <outlet property="btnKg_to_St" destination="cFG-i3-vLK" id="tO3-Mp-nKs"/>
+                        <outlet property="btnST_to_KG" destination="xcg-ue-A5L" id="bXh-jI-Dj0"/>
                         <outlet property="lblHeadText" destination="ZRb-Gn-eQa" id="wgX-rM-BxD"/>
                         <outlet property="lblOutput" destination="kaZ-ea-MNA" id="SEn-ZP-3RL"/>
                         <outlet property="txtUserInput" destination="lfN-5H-cVO" id="LzH-dY-iZR"/>

@@ -22,8 +22,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lblBottomText: UILabel!
     
+    func checkBackground(){
+        if secondBackground == "white"{
+            viewMain.backgroundColor = UIColor.white
+        }else if secondBackground == "cyan"{
+            viewMain.backgroundColor = UIColor.cyan
+        }else if secondBackground == "blue"{
+            viewMain.backgroundColor = UIColor.blue
+            colorChange()
+        }else{
+            viewMain.backgroundColor = UIColor.white
+        }
+    }
+    
     
     @IBAction func btnNext(_ sender: Any) {
+        let nxtScreen = self.storyboard?.instantiateViewController(withIdentifier: "secondScreen") as! ViewControllerSecond
+        self.present(nxtScreen, animated: true, completion: nil)
     }
     
     @IBAction func btnChangeWhite(_ sender: Any) {
@@ -44,14 +59,9 @@ class ViewController: UIViewController {
         colorChange()
     }
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        checkBackground()
     }
 
 
