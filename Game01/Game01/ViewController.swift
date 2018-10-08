@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    @IBAction func btnTOscreen2(_ sender: Any) {
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "secondScreen") as! ViewControllerSecond
+        self.present(next, animated: true, completion: nil)
+    }
+    
 
 }
 
