@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBAction func btnTOscreen2(_ sender: Any) {
         let next = self.storyboard?.instantiateViewController(withIdentifier: "secondScreen") as! ViewControllerSecond
         self.present(next, animated: true, completion: nil)
+       
     }
     
 

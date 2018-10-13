@@ -161,37 +161,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmj-TG-xsx">
-                                <rect key="frame" x="52" y="595" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="btnBack:" destination="K9c-IV-HCY" eventType="touchUpInside" id="Eyw-bm-Fi3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-N8-B1S">
-                                <rect key="frame" x="320" y="595" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="btnNext:" destination="K9c-IV-HCY" eventType="touchUpInside" id="vMH-fT-2XA"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6f-cH-K19">
-                                <rect key="frame" x="166" y="323" width="68" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-Uq-oiu">
+                                <rect key="frame" x="0.0" y="50" width="375" height="587"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="M9N-Aj-ZWm">
+                                        <rect key="frame" x="153.5" y="0.0" width="68" height="306"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6f-cH-K19">
+                                                <rect key="frame" x="0.0" y="285.5" width="68" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="234" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-7y-Km1">
+                                        <rect key="frame" x="36.5" y="557" width="302" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmj-TG-xsx">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="K9c-IV-HCY" eventType="touchUpInside" id="Eyw-bm-Fi3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-N8-B1S">
+                                                <rect key="frame" x="268" y="0.0" width="34" height="30"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="btnNext:" destination="K9c-IV-HCY" eventType="touchUpInside" id="vMH-fT-2XA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eva-Uq-oiu" firstAttribute="centerX" secondItem="MmB-7h-4pq" secondAttribute="centerX" id="68R-CJ-3tQ"/>
+                            <constraint firstItem="Eva-Uq-oiu" firstAttribute="centerY" secondItem="MmB-7h-4pq" secondAttribute="centerY" id="771-vR-JTV"/>
+                            <constraint firstItem="MmB-7h-4pq" firstAttribute="bottom" secondItem="Eva-Uq-oiu" secondAttribute="bottom" constant="30" id="93C-ww-Tps"/>
+                            <constraint firstItem="Eva-Uq-oiu" firstAttribute="leading" secondItem="MmB-7h-4pq" secondAttribute="leading" id="J6O-bu-DCD"/>
+                            <constraint firstItem="MmB-7h-4pq" firstAttribute="trailing" secondItem="Eva-Uq-oiu" secondAttribute="trailing" id="JyT-Wp-s08"/>
+                            <constraint firstItem="Eva-Uq-oiu" firstAttribute="top" secondItem="MmB-7h-4pq" secondAttribute="top" constant="30" id="jsf-Mp-SOF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MmB-7h-4pq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hh7-Wy-6gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="-213"/>
+            <point key="canvasLocation" x="1112.8" y="-213.64317841079463"/>
         </scene>
         <!--View Controller Fourth-->
         <scene sceneID="Nmr-yT-UyI">
